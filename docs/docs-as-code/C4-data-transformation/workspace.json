@@ -1,0 +1,856 @@
+{
+  "id" : 1,
+  "name" : "Teacher Services Identity",
+  "description" : "Model of the Teacher Services Identity software system",
+  "revision" : 0,
+  "lastModifiedDate" : "2022-06-21T08:41:24Z",
+  "lastModifiedAgent" : "structurizr-web/2568/diagram",
+  "properties" : {
+    "structurizr.dsl" : "d29ya3NwYWNlICJUZWFjaGVyIFNlcnZpY2VzIElkZW50aXR5IiAiTW9kZWwgb2YgdGhlIFRlYWNoZXIgU2VydmljZXMgSWRlbnRpdHkgc29mdHdhcmUgc3lzdGVtIiB7CgogICAgbW9kZWwgewogICAgICAgICAgCiAgICAgICAgICAgIAogICAgICAgICAgICAjIHVzZXJzCiAgICAgICAgICAgIAogICAgICAgICAgICBucHF1c2VyID0gcGVyc29uICJOUFEgVXNlciIgIkEgcGVyc29uIGluIGVkdWNhdGlvbiB3aXRoaW5nIHRvIHJlZ2lzdGVyIGZvciBhbiBOUFEiCiAgICAgICAgICAgIAogICAgICAgICAgICBmaW5kdHJudXNlciA9IHBlcnNvbiAiTG9zdCBUUk4gVXNlciIgIkEgcGVyc29uIHdhbnRpbmcgdG8gZmluZyB0aGVpciBUZWFjaGVyIFJlZmVyZW5jZSBOdW1iZXIgKFRSTikiICJMb3N0IFRSTiBVc2VyIgogICAgICAgICAgICBxdWFsaWZpZWR0ZWFjaGVyID0gcGVyc29uICJRdWFsaWZpZWQgVGVhY2hlciIgIk5ld2x5IFF1YWxpZmllZCBhbmQgRnVsbHkgUXVhbGlmaWVkIFRlYWNoZXJzIgogICAgICAgICAgICB0cmFpbmVldGVhY2hlciA9IHBlcnNvbiAiVHJhaW5lZSBUZWFjaGVyIiAiVHJhaW5lZSBUZWFjaGVycyIKICAgICAgICAgICAgaXR0cHJvdmlkZXIgPSBwZXJzb24gIkluaXRpYWwgVGVhY2hlciBUcmFpbmluZyBQcm92aWRlciIgIkhpZ2hlciBlZHVjYXRpb24gaW5zdGl0dXRlIGluaXRpYWwgdGVhY2hlciB0cmFpbmluZyBwcm92aWRlcnMiCiAgICAgICAgICAgIHNjaG9vbGVtcGxveWVyID0gcGVyc29uICJFbWxwb3llciAoU2Nob29sKSIgIk51cnNlcmllcywgU2Nob29scywgQWNhZGVtaWVzLCBGcmVlIHNjaG9vbHMsIEluZGVwZW5kZW50IHNjaG9vbHMgYW5kIENvbGxlZ2VzIgogICAgICAgICAgICBhcHByb3ByaWF0ZWJvZHkgPSBwZXJzb24gIkFwcHJvcHJpYXRlIEJvZHkiICJPcmdhbmlzYXRpb25zIHJlc3BvbnNpYmxlIGZvciB0aGUgcXVhbGl0eSBhc3N1cmFuY2UgcHJvY2VzcyBmb3IgZWFybHkgY2FyZWVyIHRlYWNoZXIgaW5kdWN0aW9uIgogICAgICAgICAgICBxdHNlcXVpdmVsZW5jZXRlYWNoZXIgPSBwZXJzb24gIk5vbmUgUVRTIFRlYWNoZXIiICJRdWFsaWZpZWQgdGVhY2hlciBvdXRzaWRlIG9mIEVuZ2xhbmQgYW5kIFdhbGVzIgogICAgICAgICAgICBub25lc2Nob29sZW1wbG95ZXIgPSBwZXJzb24gIkVtcGxveWVyIChOb25lIFNjaG9vbCkiICJUZWFjaGVyIHN1cHBseSBhZ2VuY2llcywgbG9jYWwgYXV0aG9yaXRpZXMgYW5kIHRyYWluaW5nIHByb3ZpZGVycyIKICAgICAgICAgICAgY2l0aXplbiA9IHBlcnNvbiAiQ2l0aXplbiIgIkFueWJvZHkgd2hvIG5lZWVkcyB0byB1c2UgdGhlIFRSQSdzIHB1YmxpYyBHb3YuVWsgc2VydmljZXMiCiAgICAgICAgICAgIAogICAgICAgICAgICAjIHN5c3RlbXMKICAgICAgICAgICAgdHJhc29mdHdhcmVzeXN0ZW0gPSBzb2Z0d2FyZXN5c3RlbSAiVFJBIFNlcnZpY2VzIiAiVGVhY2hlciBSZWd1bGF0aW9uIEFnZW5jeSBzeXRlbXMgaW5jbHVkaW5nIERRVCBDUk0sIFF1YWxpZmljYXRpb25zIEFQSSwgQXBwbHkgZm9yIFFUUyJ7CiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBxdWFsaWZpZWR0ZWFjaGVyc2FwaWNvbnQgPSBjb250YWluZXIgIlRlYWNoZXIgUXVhbGlmaWNhdGlvbnMgUkVTVCBBUEkiICJxdWFsaWZpZWQtdGVhY2hlcnMtYXBpIiAiLk5ldCBBUEkgUkVTVGZ1bCBBUEkgZm9yIGludGVncmF0aW5nIHdpdGggdGhlIERhdGFiYXNlIG9mIFF1YWxpZmllZCBUZWFjaGVycyBDUk0iIHsKICAgICAgICAgICAgICAgICAgICBxdWFsaWZpZWR0ZWFjaGVyc2FwaSA9IGNvbXBvbmVudCAicXVhbGlmaWVkLXRlYWNoZXJzLWFwaSIgIlJFU1QgQVBJIHByb3ZpZGluZyBkYXRhIGludGVncmF0aW9uIHRvIFRSQSBkYXRhIHNvdXJjZXMiICIuTmV0IGNvcmUgNi54LCBQb3N0Z3JlU1FMIDEzLngsLk5ldCBjb3JlIDYueCBTREsiCiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgfQoKICAgICAgICAgICAgICAgICAgICBmaW5kY29udCA9IGNvbnRhaW5lciAiRmluZC1BLUxvc3QtVHJuIEdvdi5VayBXZWIgQXBwbGljYXRpb24iICJodHRwczovL2ZpbmQtYS1sb3N0LXRybi5lZHVjYXRpb24uZ292LnVrL3N0YXJ0IiAiUnVieSBvbiBSYWlscyIgewogICAgICAgICAgICAgICAgICAgICMgZmluZCBhIGxvc3QgdHJuIHVzZXJzCiAgICAgICAgICAgICAgICAgICAgIyBxdWFsaWZpZWR0ZWFjaGVyIC0+IHRoaXMgImh0dHBzIgogICAgICAgICAgICAgICAgICAgICMgdHJhaW5lZXRlYWNoZXIgLT4gdGhpcyAiaHR0cHMiCiAgICAgICAgICAgICAgICAgICAgIyBjaXRpemVuIC0+IHRoaXMgImh0dHBzIgogICAgICAgICAgICAgICAgICAgIHRoaXMgLT4gcXVhbGlmaWVkdGVhY2hlcnNhcGkgInVzZXMiCiAgICAgICAgICAgICAgICAgICAgZmluZHJ1YnlvbnJhaWxzbW9ub2xpdGggPSBjb21wb25lbnQgImZpbmQtYS1sb3N0LXRybiBNb25vbGl0aCIgIkZpbmQgYSBsb3N0IFRSTiBpcyBhIG1vbm9saXRoaWMgUmFpbHMgYXBwIGJ1aWx0IHdpdGggdGhlIEdPVlVLIERlc2lnbiBTeXN0ZW0gYW5kIGhvc3RlZCBvbiBHT1ZVSyBQYWFTLiIgIlJ1YnkgMy54LE5vZGUuanMgMTYueCxZYXJuIDEuMjIueCxQb3N0Z3JlU1FMIDEzLngsUmVkaXMgNi54IgogICAgICAgICAgICAgICAgICAgIGZpbmRydWJ5b25yYWlsc21vbm9saXRoIC0+IHF1YWxpZmllZHRlYWNoZXJzYXBpICJodHRwcyIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgZDM2NWNvbnQgPSBjb250YWluZXIgIkRRVCBDUk0iICJEUVQgRDM2NSBTQUFTIFNlcnZpY2UiICJTQUFTInsKICAgICAgICAgICAgICAgICAgICBkcXRjcm0gPSBjb21wb25lbnQgIkNSTSIgIkNSTSBpbnN0YW5jZSBwcm92aWRpbmcgY3VzdG9tZXIgcmVsYXRpb25zaGlwIG1hbmFnZW1lbnQgYW5kIGRhdGEgc3RvcmUgaHR0cHM6Ly9lbnQtZHF0LXByb2QuY3JtNC5keW5hbWljcy5jb20iICJNUyBEMzY1IFNBQVMiCiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICB9CgogICAgICAgICAgCgoKCiAgICAgICAgICAgIAogICAgICAgICAgICAjICoqKioqKioqKipzb2Z0d2FyZSBzeXN0ZW0qKioqKioqKioqCiAgICAgICAgICAgIHRzaWRlbnRpdHlzb2Z0d2FyZVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJUZWFjaGVyIFNlcnZpY2VzIElkZW50aXR5IFNvZnR3YXJlIFN5c3RlbSIgIkEgZGlzdGlidXRlZCBzZXQgb2Ygc29mdHdhcmUgY29udGFpbmVycyB0aGF0IHByb3ZpZGUgaWRlbnRpdHkgc2VydmljZXMgYW5kIGRhdGEgcmVsYXRlZCB0byB0ZWFjaGVyIHNlcnZjaWVzIHVzZXJzInsKICAgICAgICAgICAgICAgICMgY29udGFpbmVycwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgdGVhY2hlcmFjY291bnRjb250ID0gY29udGFpbmVyICJUZWFjaGVyIEFjY291bnQgQW5kIFByb2ZpbGUiICJPSURDIFByb3ZpZGVyIGFuZCBSZWNvcmQgQ2hlY2tpbmcgU2VydmljZSAoUHJvZmlsZSkiICJSdWJ5IEFwcGxpY2F0aW9uInsKICAgICAgICAgICAgICAgICAgICAgICAgdGVhY2hlcmFjY29pZGNwcm92ID0gY29tcG9uZW50ICJPSURDIFByb3ZpZGVyIiAiT0lEQyBwcm92aWRlciBvbiB0b3Agb2YgT0FVVEggLSBpZGVudGl0eSBwcm92aXNpb24iICJSdWJ5IgogICAgICAgICAgICAgICAgICAgICAgICB0ZWFjaGVyYWNjb2lkY2NvbmZpZ2RiID0gY29tcG9uZW50ICJPSURDIENvbmZpZyIgIk9JREMgY29uZmlnIGRhdGFiYXNlIC0gY2xhaW0gLyB0b2tlbiBkZWYgc3RvcmUiICJQb3N0Z3JlU1FMIiAiRGF0YWJhc2UiCiAgICAgICAgICAgICAgICAgICAgICAgIHRlYWNoZXJhY2N1c2VyZGF0YWRiID0gY29tcG9uZW50ICJUZWFjaGVyIEFjY291bnQgVXNlciBEYXRhIiAiVGVhY2hlciBhY2NvdW50IHVzZXIgZGF0YSIgIlBvc3RncmVTUUwiICJEYXRhYmFzZSIKICAgICAgICAgICAgICAgICAgICAgICAgcmVjb3JkY2hlY2tvcmNoZXN0cmF0b3IgPSBjb21wb25lbnQgIlJlY29yZCBDaGVjayBPcmNoZXN0cmF0b3IiICJSZWNvcmQgY2hlY2tpbmcgb3JjaGVzdHJhdGlvbiwgY2xhaW0gY3JlYXRpb24iICJSdWJ5IiAKICAgICAgICAgICAgICAgICAgICAgICAgIyByZWNvcmRjaGVja2ludGVydXB0ZXIgPSBjb21wb25lbnQgIkludGVydXB0b3IiICJSZWNvcmQgY2hlY2sgaW50ZXJ1cHQsIHByZXNlbnQgcXVlc3Rpb25zIChyZWxldmFudCB0byBzZXJ2aWNlIC8gY2xhaW0pIHRvIGNoZWNrIGlkZW50aXR5IiAiUnVieSIgCiAgICAgICAgICAgICAgICAgICAgICAgIHJlY29yZGNoZWNrYXBpID0gY29tcG9uZW50ICJSQ1MgQVBJIiAiUmVjb3JkIGNoZWNrIEFQSSwgb3V0IG9mIGJhbmQgKGFjY291bnQpIEFQSSIgIlJ1YnkiICJGdXR1cmUgUGhhc2UiCiAgICAgICAgICAgICAgICAgICAgICAgIGJvb2tlbmRzZXJ2aWNlID0gY29tcG9uZW50ICJCb29rZW5kIFNlcnZpY2UiICJCb29rZW5kIGludGVydXB0IHNlcnZpY2UsIHJlZGlyZWN0cyB1c2VycyB0byBVSSB0byBnZXQgaW5wdXQgZGF0YSBuZWVkZWQgdG8gbWF0Y2gvZnVsZmlsbCBjbGFpbSB0b2tlbiAoTlBRID0gUVRTKSIKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgIyAqKioqKioqKioqc29mdHdhcmUgc3lzdGVtKioqKioqKioqKgogICAgICAgICAgICBucHFzb2Z0d2FyZVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJOUFEgU29mdHdhcmUgU3lzdGVtIiAiQW4gYXBwbGljYXRpb24gdXNlZCB0byByZWdpc3RlciBmb3IgYW4gTlBRInsKICAgICAgICAgICAgICAgICMgY29udGFpbmVycwogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgbnBxY29udCA9IGNvbnRhaW5lciAiTlBRIEFwcGxpY2F0aW9uIiAiR292LlVrIHdlYnNpdGUgdXNlZCB0byByZWdpc3RlciBmb3IgYW4gTlBRIiAiUnVieSBBcHBsaWNhdGlvbiJ7CiAgICAgICAgICAgICAgICAgICAgICAgIG5wcWNvbXAgPSBjb21wb25lbnQgIk5QUSBVc2VyIEludGVyZmFjZSIgIlJlZ2lzdGVyIGZvciBOUFEiICJSdWJ5IgogICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIAogICAgICAgICAgICAgYW55b3RoZXJzb2Z0d2FyZVN5c3RlbSA9IHNvZnR3YXJlU3lzdGVtICJBbnkgVGVhY2hlciBTZXJ2aWNlcyBTZXJ2aWNlIiAiQW55IGF1dGhvcmlzZWQgKGJ5IHRva2VuL2NsaWVudCByZWdpc3RyYXRpb24pIFRTIHN1YnNjcmliaW5nIHNlcnZpY2UiICJGdXR1cmUgUGhhc2UiewogICAgICAgICAgICAgICAgIyBjb250YWluZXJzCiAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICBhbnljb250ID0gY29udGFpbmVyICJBIFRlYWNoZXIgU2VydmljZXMgRGlnaXRhbCBTZXJ2aWNlIiAiR292LlVrIHdlYnNpdGUiICJSdWJ5IEFwcGxpY2F0aW9uInsKICAgICAgICAgICAgICAgICAgICAgICAgYW55Y29tcCA9IGNvbXBvbmVudCAiQSBUZWFjaGVyIFNlcnZpY2VzIERpZ2l0YWwgU2VydmljZSIgIkEuTi5PdGhlciBTZXJ2aWNlIiAiUnVieSIKICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgIyAqKioqKioqKioqc3lzdGVtIGNvbnRleHQgdXNlciByZWxhdGlvbnNoaXBzKioqKioqKioqKgogICAgICAgICAgICAKICAgICAgICAgICAgdHNpZGVudGl0eXNvZnR3YXJlU3lzdGVtIC0+IHRyYXNvZnR3YXJlc3lzdGVtICJDb25zdW1lcyBRVFMgZGF0YSBmcm9tIgogICAgICAgICAgICBucHF1c2VyIC0+IG5wcXNvZnR3YXJlU3lzdGVtICJVc2VzIgogICAgICAgICAgICBucHFzb2Z0d2FyZVN5c3RlbSAtPiB0c2lkZW50aXR5c29mdHdhcmVTeXN0ZW0gIkF1dGhlbnRpY2F0ZXMgd2l0aCBUZWFjaGVyIEFjY291bnQgYW5kIHJlY2lldmVkIFRlYWNoZXIgUHJvZmlsZSBEYXRhIgogICAgICAgICAgICBmaW5kdHJudXNlciAtPiB0cmFzb2Z0d2FyZXN5c3RlbSAiVXNlcyIKICAgICAgICAgICAgcmVjb3JkY2hlY2tvcmNoZXN0cmF0b3IgLT4gcXVhbGlmaWVkdGVhY2hlcnNhcGkgIkdldHMgZGF0YSBmcm9tIGFwcHJvcHJpYXRlIHNvdXJjZSBmb3IgY2xhaW0gdG9rZW4gKE5QUSA9IFFUUykiCiAgICAgICAgICAgIHJlY29yZGNoZWNrb3JjaGVzdHJhdG9yIC0+IHRlYWNoZXJhY2N1c2VyZGF0YWRiICJDUlVEIgogICAgICAgICAgICByZWNvcmRjaGVja29yY2hlc3RyYXRvciAtPiBmaW5kcnVieW9ucmFpbHNtb25vbGl0aCAiSW52b2tlcyIKICAgICAgICAgICAgdGVhY2hlcmFjY29pZGNwcm92IC0+IHRlYWNoZXJhY2NvaWRjY29uZmlnZGIgIk1hdGNoZXMgY2xpZW50IElkIHRvIGNsYWltIGUuZy4gUVRTIgogICAgICAgICAgICB0ZWFjaGVyYWNjb2lkY3Byb3YgLT4gcmVjb3JkY2hlY2tvcmNoZXN0cmF0b3IgIkdpdmVuIGEgY2xpZW50X2lkIC8gY2xhaW0gbWF0Y2ggaW52b2tlLi4uIgogICAgICAgICAgICAjIG5wcWNvbXAgLT4gZmluZHJ1YnlvbnJhaWxzbW9ub2xpdGggIk5QUSBjYWxscyBib29rZW5kIHNlcnZpY2UiCiAgICAgICAgICAgIHJlY29yZGNoZWNrb3JjaGVzdHJhdG9yIC0+IGJvb2tlbmRzZXJ2aWNlICJJbnZva2VzIEJvb2tlbmQgU2VydmljZSBmb3IgY2xhaW0gdG9rZW4iCiAgICAgICAgICAgICMgcmVjb3JkY2hlY2tpbnRlcnVwdGVyIC0+IGZpbmRydWJ5b25yYWlsc21vbm9saXRoICJSZWRpcmVjdHMgdG8iCiAgICAgICAgICAgIAogICAgICAgICAgICByZWNvcmRjaGVja2FwaSAtPiByZWNvcmRjaGVja29yY2hlc3RyYXRvciAiVXNlcyIKICAgICAgICAgICAgYW55b3RoZXJzb2Z0d2FyZVN5c3RlbSAtPiB0c2lkZW50aXR5c29mdHdhcmVTeXN0ZW0gIlVzZXMgVGVhY2hlciBQcm9maWxlIC8gUmVjb3JkIENoZWNrIEFQSSIKICAgICAgICAgICAgYW55Y29tcCAtPiByZWNvcmRjaGVja2FwaSAiQ29uc3VtZXMgVGVhY2hlciBQcm9maWxlIC8gUmVjb3JkIENoZWNrIgogICAgICAgICAgICBucHFjb21wIC0+IHRlYWNoZXJhY2NvaWRjcHJvdiAiY2FsbHMgL2F1dGggdXNpbmcgT0lEQyIKICAgICAgICB9CiAgIAoKICAgICAgCiAgICAKICAgICMgKioqKioqKioqKnZpZXdzKioqKioqKioqKgogICAgdmlld3MgewogICAgICAgIHN5c3RlbUNvbnRleHQgdHNpZGVudGl0eXNvZnR3YXJlU3lzdGVtICJTeXN0ZW1Db250ZXh0IiAiRnVsbCBDb250ZXh0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvTGF5b3V0IAogICAgICAgIH0KICAgICAgICAKICAgICAgICBzeXN0ZW1Db250ZXh0IHRzaWRlbnRpdHlzb2Z0d2FyZVN5c3RlbSAiVXNlckNvbnRleHQiICJVc2VyIENvbnRleHQiIHsKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgc3lzdGVtQ29udGV4dCB0cmFzb2Z0d2FyZXN5c3RlbSAidHJhc3lzdGVtY29udGV4dCIgIlRSQSBTeXN0ZW0gQ29udGV4dCIgewogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dAogICAgICAgIH0KICAgICAgICAKICAgICAgICBzeXN0ZW1Db250ZXh0IG5wcXNvZnR3YXJlU3lzdGVtICJucHFzeXN0ZW1jb250ZXh0IiAiVFJBIFN5c3RlbSBDb250ZXh0IiB7CiAgICAgICAgICAgIGluY2x1ZGUgKgogICAgICAgICAgICBhdXRvbGF5b3V0CiAgICAgICAgfQogICAgICAgIAogICAgICAgIGNvbnRhaW5lciB0c2lkZW50aXR5c29mdHdhcmVTeXN0ZW0gewogICAgICAgICAgICAKICAgICAgICAgICAgaW5jbHVkZSAqCiAgICAgICAgICAgIGF1dG9sYXlvdXQgCiAgICAgICAgfQogICAgICAgIAogICAgICAgIGNvbnRhaW5lciB0cmFzb2Z0d2FyZXN5c3RlbSB7CiAgICAgICAgICAgIAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCAKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgY29tcG9uZW50IHRlYWNoZXJhY2NvdW50Y29udCB7CiAgICAgICAgICAgIAogICAgICAgICAgICBpbmNsdWRlICoKICAgICAgICAgICAgYXV0b2xheW91dCAKICAgICAgICB9CiAgICAgICAgCiAgICAgICAgc3R5bGVzIHsKICAgICAgICAgICAgZWxlbWVudCAiU29mdHdhcmUgU3lzdGVtIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICMxMTY4YmQKICAgICAgICAgICAgICAgIGNvbG9yICNmZmZmZmYKICAgICAgICAgICAgfQogICAgICAgICAgICBlbGVtZW50ICJQZXJzb24iIHsKICAgICAgICAgICAgICAgIHNoYXBlIHBlcnNvbgogICAgICAgICAgICAgICAgYmFja2dyb3VuZCAjMDg0MjdiCiAgICAgICAgICAgICAgICBjb2xvciAjZmZmZmZmCiAgICAgICAgICAgIH0KICAgICAgICAgICAgCiAgICAgICAgICAgIGVsZW1lbnQgIlN5c3RlbSBVc2VyIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICM5OTk5OTkKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiRnV0dXJlIFBoYXNlIiB7CiAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kICNEMDMzMTcKICAgICAgICAgICAgfQogICAgICAgICAgICAKICAgICAgICAgICAgZWxlbWVudCAiRGF0YWJhc2UiIHsKICAgICAgICAgICAgICAgIHNoYXBlIEN5bGluZGVyCiAgICAgICAgICAgIH0KICAgICAgICB9CiAgICB9CiAgICAKfQo="
+  },
+  "configuration" : { },
+  "model" : {
+    "people" : [ {
+      "id" : "1",
+      "tags" : "Element,Person",
+      "name" : "NPQ User",
+      "description" : "A person in education withing to register for an NPQ",
+      "relationships" : [ {
+        "id" : "37",
+        "tags" : "Relationship",
+        "sourceId" : "1",
+        "destinationId" : "30",
+        "description" : "Uses"
+      } ],
+      "location" : "Unspecified"
+    }, {
+      "id" : "3",
+      "tags" : "Element,Person",
+      "name" : "Qualified Teacher",
+      "description" : "Newly Qualified and Fully Qualified Teachers",
+      "location" : "Unspecified"
+    }, {
+      "id" : "8",
+      "tags" : "Element,Person",
+      "name" : "None QTS Teacher",
+      "description" : "Qualified teacher outside of England and Wales",
+      "location" : "Unspecified"
+    }, {
+      "id" : "5",
+      "tags" : "Element,Person",
+      "name" : "Initial Teacher Training Provider",
+      "description" : "Higher education institute initial teacher training providers",
+      "location" : "Unspecified"
+    }, {
+      "id" : "9",
+      "tags" : "Element,Person",
+      "name" : "Employer (None School)",
+      "description" : "Teacher supply agencies, local authorities and training providers",
+      "location" : "Unspecified"
+    }, {
+      "id" : "4",
+      "tags" : "Element,Person",
+      "name" : "Trainee Teacher",
+      "description" : "Trainee Teachers",
+      "location" : "Unspecified"
+    }, {
+      "id" : "6",
+      "tags" : "Element,Person",
+      "name" : "Emlpoyer (School)",
+      "description" : "Nurseries, Schools, Academies, Free schools, Independent schools and Colleges",
+      "location" : "Unspecified"
+    }, {
+      "id" : "7",
+      "tags" : "Element,Person",
+      "name" : "Appropriate Body",
+      "description" : "Organisations responsible for the quality assurance process for early career teacher induction",
+      "location" : "Unspecified"
+    }, {
+      "id" : "10",
+      "tags" : "Element,Person",
+      "name" : "Citizen",
+      "description" : "Anybody who neeeds to use the TRA's public Gov.Uk services",
+      "location" : "Unspecified"
+    }, {
+      "id" : "2",
+      "tags" : "Element,Person,Lost TRN User",
+      "name" : "Lost TRN User",
+      "description" : "A person wanting to fing their Teacher Reference Number (TRN)",
+      "relationships" : [ {
+        "id" : "39",
+        "tags" : "Relationship",
+        "sourceId" : "2",
+        "destinationId" : "11",
+        "description" : "Uses"
+      } ],
+      "location" : "Unspecified"
+    } ],
+    "softwareSystems" : [ {
+      "id" : "22",
+      "tags" : "Element,Software System",
+      "name" : "Teacher Services Identity Software System",
+      "description" : "A distibuted set of software containers that provide identity services and data related to teacher servcies users",
+      "relationships" : [ {
+        "id" : "53",
+        "tags" : "Relationship",
+        "sourceId" : "22",
+        "destinationId" : "17",
+        "description" : "Invokes"
+      }, {
+        "id" : "36",
+        "tags" : "Relationship",
+        "sourceId" : "22",
+        "destinationId" : "11",
+        "description" : "Consumes QTS data from"
+      }, {
+        "id" : "54",
+        "tags" : "Relationship",
+        "sourceId" : "22",
+        "destinationId" : "14",
+        "description" : "Invokes"
+      }, {
+        "id" : "47",
+        "tags" : "Relationship",
+        "sourceId" : "22",
+        "destinationId" : "12",
+        "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+      }, {
+        "id" : "46",
+        "tags" : "Relationship",
+        "sourceId" : "22",
+        "destinationId" : "13",
+        "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "23",
+        "tags" : "Element,Container",
+        "name" : "Teacher Account And Profile",
+        "description" : "OIDC Provider and Record Checking Service (Profile)",
+        "relationships" : [ {
+          "id" : "52",
+          "tags" : "Relationship",
+          "sourceId" : "23",
+          "destinationId" : "14",
+          "description" : "Invokes"
+        }, {
+          "id" : "43",
+          "tags" : "Relationship",
+          "sourceId" : "23",
+          "destinationId" : "13",
+          "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+        }, {
+          "id" : "44",
+          "tags" : "Relationship",
+          "sourceId" : "23",
+          "destinationId" : "12",
+          "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+        }, {
+          "id" : "45",
+          "tags" : "Relationship",
+          "sourceId" : "23",
+          "destinationId" : "11",
+          "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+        }, {
+          "id" : "51",
+          "tags" : "Relationship",
+          "sourceId" : "23",
+          "destinationId" : "17",
+          "description" : "Invokes"
+        } ],
+        "technology" : "Ruby Application",
+        "components" : [ {
+          "id" : "26",
+          "tags" : "Element,Component,Database",
+          "name" : "Teacher Account User Data",
+          "description" : "Teacher account user data",
+          "technology" : "PostgreSQL",
+          "size" : 0
+        }, {
+          "id" : "29",
+          "tags" : "Element,Component",
+          "name" : "Bookend Service",
+          "description" : "Bookend interupt service, redirects users to UI to get input data needed to match/fulfill claim token (NPQ = QTS)",
+          "size" : 0
+        }, {
+          "id" : "25",
+          "tags" : "Element,Component,Database",
+          "name" : "OIDC Config",
+          "description" : "OIDC config database - claim / token def store",
+          "technology" : "PostgreSQL",
+          "size" : 0
+        }, {
+          "id" : "28",
+          "tags" : "Element,Component,Future Phase",
+          "name" : "RCS API",
+          "description" : "Record check API, out of band (account) API",
+          "relationships" : [ {
+            "id" : "58",
+            "tags" : "Relationship",
+            "sourceId" : "28",
+            "destinationId" : "27",
+            "description" : "Uses"
+          } ],
+          "technology" : "Ruby",
+          "size" : 0
+        }, {
+          "id" : "24",
+          "tags" : "Element,Component",
+          "name" : "OIDC Provider",
+          "description" : "OIDC provider on top of OAUTH - identity provision",
+          "relationships" : [ {
+            "id" : "56",
+            "tags" : "Relationship",
+            "sourceId" : "24",
+            "destinationId" : "27",
+            "description" : "Given a client_id / claim match invoke..."
+          }, {
+            "id" : "55",
+            "tags" : "Relationship",
+            "sourceId" : "24",
+            "destinationId" : "25",
+            "description" : "Matches client Id to claim e.g. QTS"
+          } ],
+          "technology" : "Ruby",
+          "size" : 0
+        }, {
+          "id" : "27",
+          "tags" : "Element,Component",
+          "name" : "Record Check Orchestrator",
+          "description" : "Record checking orchestration, claim creation",
+          "relationships" : [ {
+            "id" : "48",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "26",
+            "description" : "CRUD"
+          }, {
+            "id" : "40",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "13",
+            "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+          }, {
+            "id" : "49",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "17",
+            "description" : "Invokes"
+          }, {
+            "id" : "42",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "11",
+            "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+          }, {
+            "id" : "41",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "12",
+            "description" : "Gets data from appropriate source for claim token (NPQ = QTS)"
+          }, {
+            "id" : "50",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "14",
+            "description" : "Invokes"
+          }, {
+            "id" : "57",
+            "tags" : "Relationship",
+            "sourceId" : "27",
+            "destinationId" : "29",
+            "description" : "Invokes Bookend Service for claim token"
+          } ],
+          "technology" : "Ruby",
+          "size" : 0
+        } ]
+      } ]
+    }, {
+      "id" : "33",
+      "tags" : "Element,Software System,Future Phase",
+      "name" : "Any Teacher Services Service",
+      "description" : "Any authorised (by token/client registration) TS subscribing service",
+      "relationships" : [ {
+        "id" : "59",
+        "tags" : "Relationship",
+        "sourceId" : "33",
+        "destinationId" : "22",
+        "description" : "Uses Teacher Profile / Record Check API"
+      }, {
+        "id" : "66",
+        "tags" : "Relationship",
+        "sourceId" : "33",
+        "destinationId" : "28",
+        "description" : "Consumes Teacher Profile / Record Check"
+      }, {
+        "id" : "67",
+        "tags" : "Relationship",
+        "sourceId" : "33",
+        "destinationId" : "23",
+        "description" : "Consumes Teacher Profile / Record Check"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "34",
+        "tags" : "Element,Container",
+        "name" : "A Teacher Services Digital Service",
+        "description" : "Gov.Uk website",
+        "relationships" : [ {
+          "id" : "65",
+          "tags" : "Relationship",
+          "sourceId" : "34",
+          "destinationId" : "22",
+          "description" : "Consumes Teacher Profile / Record Check"
+        }, {
+          "id" : "64",
+          "tags" : "Relationship",
+          "sourceId" : "34",
+          "destinationId" : "23",
+          "description" : "Consumes Teacher Profile / Record Check"
+        }, {
+          "id" : "63",
+          "tags" : "Relationship",
+          "sourceId" : "34",
+          "destinationId" : "28",
+          "description" : "Consumes Teacher Profile / Record Check"
+        } ],
+        "technology" : "Ruby Application",
+        "components" : [ {
+          "id" : "35",
+          "tags" : "Element,Component",
+          "name" : "A Teacher Services Digital Service",
+          "description" : "A.N.Other Service",
+          "relationships" : [ {
+            "id" : "62",
+            "tags" : "Relationship",
+            "sourceId" : "35",
+            "destinationId" : "22",
+            "description" : "Consumes Teacher Profile / Record Check"
+          }, {
+            "id" : "61",
+            "tags" : "Relationship",
+            "sourceId" : "35",
+            "destinationId" : "23",
+            "description" : "Consumes Teacher Profile / Record Check"
+          }, {
+            "id" : "60",
+            "tags" : "Relationship",
+            "sourceId" : "35",
+            "destinationId" : "28",
+            "description" : "Consumes Teacher Profile / Record Check"
+          } ],
+          "technology" : "Ruby",
+          "size" : 0
+        } ]
+      } ]
+    }, {
+      "id" : "30",
+      "tags" : "Element,Software System",
+      "name" : "NPQ Software System",
+      "description" : "An application used to register for an NPQ",
+      "relationships" : [ {
+        "id" : "74",
+        "tags" : "Relationship",
+        "sourceId" : "30",
+        "destinationId" : "24",
+        "description" : "calls /auth using OIDC"
+      }, {
+        "id" : "75",
+        "tags" : "Relationship",
+        "sourceId" : "30",
+        "destinationId" : "23",
+        "description" : "calls /auth using OIDC"
+      }, {
+        "id" : "38",
+        "tags" : "Relationship",
+        "sourceId" : "30",
+        "destinationId" : "22",
+        "description" : "Authenticates with Teacher Account and recieved Teacher Profile Data"
+      } ],
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "31",
+        "tags" : "Element,Container",
+        "name" : "NPQ Application",
+        "description" : "Gov.Uk website used to register for an NPQ",
+        "relationships" : [ {
+          "id" : "71",
+          "tags" : "Relationship",
+          "sourceId" : "31",
+          "destinationId" : "24",
+          "description" : "calls /auth using OIDC"
+        }, {
+          "id" : "72",
+          "tags" : "Relationship",
+          "sourceId" : "31",
+          "destinationId" : "23",
+          "description" : "calls /auth using OIDC"
+        }, {
+          "id" : "73",
+          "tags" : "Relationship",
+          "sourceId" : "31",
+          "destinationId" : "22",
+          "description" : "calls /auth using OIDC"
+        } ],
+        "technology" : "Ruby Application",
+        "components" : [ {
+          "id" : "32",
+          "tags" : "Element,Component",
+          "name" : "NPQ User Interface",
+          "description" : "Register for NPQ",
+          "relationships" : [ {
+            "id" : "70",
+            "tags" : "Relationship",
+            "sourceId" : "32",
+            "destinationId" : "22",
+            "description" : "calls /auth using OIDC"
+          }, {
+            "id" : "68",
+            "tags" : "Relationship",
+            "sourceId" : "32",
+            "destinationId" : "24",
+            "description" : "calls /auth using OIDC"
+          }, {
+            "id" : "69",
+            "tags" : "Relationship",
+            "sourceId" : "32",
+            "destinationId" : "23",
+            "description" : "calls /auth using OIDC"
+          } ],
+          "technology" : "Ruby",
+          "size" : 0
+        } ]
+      } ]
+    }, {
+      "id" : "11",
+      "tags" : "Element,Software System",
+      "name" : "TRA Services",
+      "description" : "Teacher Regulation Agency sytems including DQT CRM, Qualifications API, Apply for QTS",
+      "location" : "Unspecified",
+      "containers" : [ {
+        "id" : "14",
+        "tags" : "Element,Container",
+        "name" : "Find-A-Lost-Trn Gov.Uk Web Application",
+        "description" : "https://find-a-lost-trn.education.gov.uk/start",
+        "relationships" : [ {
+          "id" : "16",
+          "tags" : "Relationship",
+          "sourceId" : "14",
+          "destinationId" : "12",
+          "description" : "uses"
+        }, {
+          "id" : "15",
+          "tags" : "Relationship",
+          "sourceId" : "14",
+          "destinationId" : "13",
+          "description" : "uses"
+        } ],
+        "technology" : "Ruby on Rails",
+        "components" : [ {
+          "id" : "17",
+          "tags" : "Element,Component",
+          "name" : "find-a-lost-trn Monolith",
+          "description" : "Find a lost TRN is a monolithic Rails app built with the GOVUK Design System and hosted on GOVUK PaaS.",
+          "relationships" : [ {
+            "id" : "18",
+            "tags" : "Relationship",
+            "sourceId" : "17",
+            "destinationId" : "13",
+            "description" : "https"
+          }, {
+            "id" : "19",
+            "tags" : "Relationship",
+            "sourceId" : "17",
+            "destinationId" : "12",
+            "description" : "https"
+          } ],
+          "technology" : "Ruby 3.x,Node.js 16.x,Yarn 1.22.x,PostgreSQL 13.x,Redis 6.x",
+          "size" : 0
+        } ]
+      }, {
+        "id" : "12",
+        "tags" : "Element,Container",
+        "name" : "Teacher Qualifications REST API",
+        "description" : "qualified-teachers-api",
+        "technology" : ".Net API RESTful API for integrating with the Database of Qualified Teachers CRM",
+        "components" : [ {
+          "id" : "13",
+          "tags" : "Element,Component",
+          "name" : "qualified-teachers-api",
+          "description" : "REST API providing data integration to TRA data sources",
+          "technology" : ".Net core 6.x, PostgreSQL 13.x,.Net core 6.x SDK",
+          "size" : 0
+        } ]
+      }, {
+        "id" : "20",
+        "tags" : "Element,Container",
+        "name" : "DQT CRM",
+        "description" : "DQT D365 SAAS Service",
+        "technology" : "SAAS",
+        "components" : [ {
+          "id" : "21",
+          "tags" : "Element,Component",
+          "name" : "CRM",
+          "description" : "CRM instance providing customer relationship management and data store https://ent-dqt-prod.crm4.dynamics.com",
+          "technology" : "MS D365 SAAS",
+          "size" : 0
+        } ]
+      } ]
+    } ]
+  },
+  "documentation" : { },
+  "views" : {
+    "systemContextViews" : [ {
+      "softwareSystemId" : "22",
+      "description" : "Full Context",
+      "key" : "SystemContext",
+      "paperSize" : "A5_Portrait",
+      "dimensions" : {
+        "width" : 1616,
+        "height" : 1916
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "22",
+        "x" : 583,
+        "y" : 808
+      }, {
+        "id" : "11",
+        "x" : 583,
+        "y" : 1408
+      }, {
+        "id" : "33",
+        "x" : 208,
+        "y" : 208
+      }, {
+        "id" : "30",
+        "x" : 958,
+        "y" : 208
+      } ],
+      "relationships" : [ {
+        "id" : "36"
+      }, {
+        "id" : "59"
+      }, {
+        "id" : "38"
+      } ]
+    }, {
+      "softwareSystemId" : "22",
+      "description" : "User Context",
+      "key" : "UserContext",
+      "paperSize" : "A5_Portrait",
+      "dimensions" : {
+        "width" : 1616,
+        "height" : 1916
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "22",
+        "x" : 583,
+        "y" : 808
+      }, {
+        "id" : "11",
+        "x" : 583,
+        "y" : 1408
+      }, {
+        "id" : "33",
+        "x" : 208,
+        "y" : 208
+      }, {
+        "id" : "30",
+        "x" : 958,
+        "y" : 208
+      } ],
+      "relationships" : [ {
+        "id" : "36"
+      }, {
+        "id" : "59"
+      }, {
+        "id" : "38"
+      } ]
+    }, {
+      "softwareSystemId" : "11",
+      "description" : "TRA System Context",
+      "key" : "trasystemcontext",
+      "paperSize" : "A5_Landscape",
+      "dimensions" : {
+        "width" : 1566,
+        "height" : 1416
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 571,
+        "y" : 908
+      }, {
+        "id" : "22",
+        "x" : 208,
+        "y" : 258
+      }, {
+        "id" : "2",
+        "x" : 958,
+        "y" : 208
+      } ],
+      "relationships" : [ {
+        "id" : "36"
+      }, {
+        "id" : "39"
+      } ]
+    }, {
+      "softwareSystemId" : "30",
+      "description" : "TRA System Context",
+      "key" : "npqsystemcontext",
+      "paperSize" : "A5_Portrait",
+      "dimensions" : {
+        "width" : 866,
+        "height" : 2016
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "enterpriseBoundaryVisible" : true,
+      "elements" : [ {
+        "id" : "22",
+        "x" : 208,
+        "y" : 1507
+      }, {
+        "id" : "1",
+        "x" : 233,
+        "y" : 207
+      }, {
+        "id" : "30",
+        "x" : 208,
+        "y" : 907
+      } ],
+      "relationships" : [ {
+        "id" : "37"
+      }, {
+        "id" : "38"
+      } ]
+    } ],
+    "containerViews" : [ {
+      "softwareSystemId" : "22",
+      "key" : "TeacherServicesIdentitySoftwareSystem-Container",
+      "paperSize" : "A5_Portrait",
+      "dimensions" : {
+        "width" : 1616,
+        "height" : 1916
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "11",
+        "x" : 583,
+        "y" : 1408
+      }, {
+        "id" : "33",
+        "x" : 208,
+        "y" : 208
+      }, {
+        "id" : "23",
+        "x" : 583,
+        "y" : 808
+      }, {
+        "id" : "30",
+        "x" : 958,
+        "y" : 208
+      } ],
+      "relationships" : [ {
+        "id" : "75"
+      }, {
+        "id" : "67"
+      }, {
+        "id" : "45"
+      } ]
+    }, {
+      "softwareSystemId" : "11",
+      "key" : "TRAServices-Container",
+      "paperSize" : "A4_Portrait",
+      "dimensions" : {
+        "width" : 1870,
+        "height" : 2020
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "externalSoftwareSystemBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "22",
+        "x" : 392,
+        "y" : 208
+      }, {
+        "id" : "12",
+        "x" : 733,
+        "y" : 1408
+      }, {
+        "id" : "14",
+        "x" : 1108,
+        "y" : 808
+      }, {
+        "id" : "20",
+        "x" : 358,
+        "y" : 808
+      } ],
+      "relationships" : [ {
+        "id" : "16"
+      }, {
+        "id" : "54"
+      }, {
+        "id" : "47",
+        "vertices" : [ {
+          "x" : 208,
+          "y" : 704
+        }, {
+          "x" : 208,
+          "y" : 1108
+        } ]
+      } ]
+    } ],
+    "componentViews" : [ {
+      "key" : "TeacherServicesIdentitySoftwareSystem-TeacherAccountAndProfile-Component",
+      "paperSize" : "A3_Portrait",
+      "dimensions" : {
+        "width" : 2504,
+        "height" : 2620
+      },
+      "automaticLayout" : {
+        "implementation" : "Graphviz",
+        "rankDirection" : "TopBottom",
+        "rankSeparation" : 300,
+        "nodeSeparation" : 300,
+        "edgeSeparation" : 0,
+        "vertices" : false
+      },
+      "containerId" : "23",
+      "externalContainerBoundariesVisible" : true,
+      "elements" : [ {
+        "id" : "33",
+        "x" : 329,
+        "y" : 208
+      }, {
+        "id" : "11",
+        "x" : 1829,
+        "y" : 2008
+      }, {
+        "id" : "24",
+        "x" : 1079,
+        "y" : 808
+      }, {
+        "id" : "25",
+        "x" : 1079,
+        "y" : 1408
+      }, {
+        "id" : "26",
+        "x" : 329,
+        "y" : 2008
+      }, {
+        "id" : "27",
+        "x" : 329,
+        "y" : 1408
+      }, {
+        "id" : "28",
+        "x" : 329,
+        "y" : 808
+      }, {
+        "id" : "29",
+        "x" : 1079,
+        "y" : 2008
+      }, {
+        "id" : "30",
+        "x" : 1079,
+        "y" : 208
+      } ],
+      "relationships" : [ {
+        "id" : "74"
+      }, {
+        "id" : "42",
+        "vertices" : [ {
+          "x" : 929,
+          "y" : 1708
+        }, {
+          "x" : 1708,
+          "y" : 2008
+        } ]
+      }, {
+        "id" : "55"
+      }, {
+        "id" : "66"
+      }, {
+        "id" : "56"
+      }, {
+        "id" : "57"
+      }, {
+        "id" : "58"
+      }, {
+        "id" : "48"
+      } ]
+    } ],
+    "configuration" : {
+      "branding" : { },
+      "styles" : {
+        "elements" : [ {
+          "tag" : "Software System",
+          "background" : "#1168bd",
+          "color" : "#ffffff"
+        }, {
+          "tag" : "Person",
+          "background" : "#08427b",
+          "color" : "#ffffff",
+          "shape" : "Person"
+        }, {
+          "tag" : "System User",
+          "background" : "#999999"
+        }, {
+          "tag" : "Future Phase",
+          "background" : "#d03317"
+        }, {
+          "tag" : "Database",
+          "shape" : "Cylinder"
+        } ]
+      },
+      "terminology" : { },
+      "lastSavedView" : "npqsystemcontext"
+    }
+  }
+}
