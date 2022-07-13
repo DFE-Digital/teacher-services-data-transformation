@@ -1,0 +1,48 @@
+{
+    "getanidentity":
+    {
+        "id": "rcsid0001", 
+        "firstname": "Beatrice",
+        "middlename:":"",
+        "lastname": "Kiddo",
+        "dateofbirth": "1972-07-04",
+        "nino":"NY090909C",
+        "emailaddress": "mytsrcsemail@anemail.com",
+                        
+        "scopes":
+            [
+               { "traclaims":
+                [
+                    {"qts":
+                        {
+                            "claimcreateddatetime": "2022-07-04T11:56:24+00:00",
+                            "qtsstatus": "holds qts",
+                            "qtsattaineddate": "1998-08-08",
+                            "qtsfirstname": "Beatrice",
+                            "qtssecondname": "Kiddo",
+                            "qtsdob": "1972-07-04",
+                            "qtsnino": "NY090909C",
+                            "qtstrn": "trn12345",
+
+                            "emailaddresses": 
+                                    [
+                                        { "dqtemail": "mydqtemail.com" },
+                                        { "dqtprevious-email": "myprevdqtemail.com" }
+
+                                    ]
+                        }
+                    },
+                    {"sanctions":
+                        {
+                            "prohibited": "y",
+                            "prohibitionreason": "a prohibition reason"
+                        }
+                    }
+                ]
+                    
+                }
+
+             ] 
+    }        
+}
+
